@@ -1,0 +1,20 @@
+--Nugget #13: Indexes and Synonyms
+
+--Indexing
+
+CREATE INDEX HIRE_DATE_IX ON EMPLOYEES (HIRE_DATE);
+
+ALTER INDEX EMP_NAME_IX RENAME TO EMP_NAMERENAME_IX;
+
+DROP INDEX HIRE_DATE_IX;
+
+--Synonyms
+
+CREATE SYNONYM emp FOR hr.employees;
+
+SELECT * FROM emp;
+
+RENAME emp to empsyn;
+
+
+
